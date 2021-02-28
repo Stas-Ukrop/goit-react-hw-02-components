@@ -1,0 +1,10 @@
+button {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+button:hover,
+button:focus {
+  background-color: cornflowerblue;
+}
