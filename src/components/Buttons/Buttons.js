@@ -1,25 +1,17 @@
 import React from "react";
 import "./Buttons.css";
 import PropTypes from "prop-types";
+import CreateButtons from "./createButtons";
 
-const Buttons = ({ good, neutral, bad }) => {
+const Buttons = ({ options, setOptions }) => {
   return (
     <>
-      <button type="button" onClick={good}>
-        good
-      </button>
-      <button type="button" onClick={neutral}>
-        neutral
-      </button>
-      <button type="button" onClick={bad}>
-        bad
-      </button>
+      <CreateButtons options={options} setOptions={setOptions} />
     </>
   );
 };
 export default Buttons;
 Buttons.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
+  options: PropTypes.array,
+  setOptions: PropTypes.array,
 };
